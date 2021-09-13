@@ -1,7 +1,7 @@
 package main
 
 import (
-	"money_transfer_service/cmd"
+	"github.com/pablonoras/money_transfer_service/cmd"
 )
 
 func main() {

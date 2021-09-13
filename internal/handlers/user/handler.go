@@ -3,8 +3,8 @@ package user
 import (
 	"encoding/json"
 	"fmt"
-	"money_transfer_service/internal/core/ports"
 	"github.com/go-chi/chi"
+	"github.com/pablonoras/money_transfer_service/internal/core/ports"
 	"net/http"
 )
 

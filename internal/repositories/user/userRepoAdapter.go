@@ -2,7 +2,7 @@ package user
 
 import (
 	"context"
-	"money_transfer_service/internal/core/domain"
+	"github.com/pablonoras/money_transfer_service/internal/core/domain"
 )
 
 func (repo *userRepository)GetAccess(ctx context.Context, userID string) error {

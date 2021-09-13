@@ -2,8 +2,8 @@ package service
 
 import (
 	"context"
-	"money_transfer_service/internal/core/domain"
-	"money_transfer_service/internal/core/ports"
+	"github.com/pablonoras/money_transfer_service/internal/core/domain"
+	"github.com/pablonoras/money_transfer_service/internal/core/ports"
 )
 
 type userService struct{

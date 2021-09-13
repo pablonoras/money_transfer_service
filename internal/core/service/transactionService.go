@@ -3,9 +3,9 @@ package service
 import (
 	"context"
 	"fmt"
-	"money_transfer_service/internal/core/domain"
-	"money_transfer_service/internal/core/ports"
 	"github.com/oklog/ulid"
+	"github.com/pablonoras/money_transfer_service/internal/core/domain"
+	"github.com/pablonoras/money_transfer_service/internal/core/ports"
 	"math/rand"
 	"time"
 )

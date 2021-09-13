@@ -2,7 +2,7 @@ package ports
 
 import (
 	"context"
-	"money_transfer_service/internal/core/domain"
+	"github.com/pablonoras/money_transfer_service/internal/core/domain"
 )
 
 type TransactionService interface {

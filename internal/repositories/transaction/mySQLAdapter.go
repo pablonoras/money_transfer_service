@@ -2,7 +2,7 @@ package transaction
 
 import (
 	"context"
-	"money_transfer_service/internal/core/domain"
+	"github.com/pablonoras/money_transfer_service/internal/core/domain"
 )
 
 func (repo *mySQLTransactionRepo) Get(ctx context.Context, userID string) ([]domain.Transaction, error) {
@@ -17,9 +17,9 @@ func (repo *mySQLTransactionRepo) Get(ctx context.Context, userID string) ([]dom
 
 	for rows.Next() {
 		var transaction domain.Transaction
-
+		var id int
 		if err := rows.Scan(
-			nil,
+			&id,
 			&transaction.TransactionID,
 			&transaction.UserID,
 			&transaction.ReceptorID,

@@ -2,12 +2,13 @@ package cmd
 
 import (
 	"database/sql"
-	"money_transfer_service/internal/core/ports"
-	"money_transfer_service/internal/core/service"
-	"money_transfer_service/internal/handlers/transaction"
-	"money_transfer_service/internal/handlers/user"
-	trxRepo "money_transfer_service/internal/repositories/transaction"
-	userRepo  "money_transfer_service/internal/repositories/user"
+	"github.com/pablonoras/money_transfer_service/internal/core/ports"
+	"github.com/pablonoras/money_transfer_service/internal/core/service"
+	"github.com/pablonoras/money_transfer_service/internal/handlers/transaction"
+	"github.com/pablonoras/money_transfer_service/internal/handlers/user"
+
+	trxRepo "github.com/pablonoras/money_transfer_service/internal/repositories/transaction"
+	userRepo  "github.com/pablonoras/money_transfer_service/internal/repositories/user"
 	"net/http"
 	"os"
 )
