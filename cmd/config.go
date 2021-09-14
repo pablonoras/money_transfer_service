@@ -100,7 +100,7 @@ func initMySQL(config mySql) (*sql.DB, error){
 	}
 
 	if !user1.Next() {
-		insertUser1, err := db.Prepare(" INSERT INTO users (user_id , site, balance) VALUES ('111','MLA','10000');")
+		insertUser1, err := db.Prepare(" INSERT INTO users (user_id , site, balance) VALUES ('111','ARG','10000');")
 		if err != nil {
 			return nil, err
 		}
@@ -121,7 +121,7 @@ func initMySQL(config mySql) (*sql.DB, error){
 	}
 
 	if !user2.Next() {
-		insertUser2, err := db.Prepare(" INSERT INTO users (user_id , site, balance) VALUES ('222','MLB','20000');")
+		insertUser2, err := db.Prepare(" INSERT INTO users (user_id , site, balance) VALUES ('222','BRA','20000');")
 		if err != nil {
 			return nil, err
 		}

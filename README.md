@@ -16,8 +16,8 @@
                     - hostname: "127.0.0.1:3306",
         
 - Also, it will INSERT 2 rows in the 'user' table (simulates 2 users of the wallet) with the following features: 
-    - User 1: {user_id:'111' , balance:'10000', site: 'MLA'}
-    - User 2: {user_id: '222', balance:'20000', site: 'MLB'}
+    - User 1: {user_id:'111' , balance:'10000', site: 'ARG'}
+    - User 2: {user_id: '222', balance:'20000', site: 'BRA'}
 
 - You are able to create transactions, retrieve the balance and get the operations of just this 2 sample users (are the only one registered).
     
