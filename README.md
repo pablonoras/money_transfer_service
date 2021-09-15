@@ -42,5 +42,5 @@
 
 ## Changelog 
 
-### `0.0.1 - 13/09/2021 Pablo Noras (pablonoras@gmail.com) 
+### `0.0.1` - 13/09/2021 Pablo Noras (pablonoras@gmail.com) 
   - First functional version
