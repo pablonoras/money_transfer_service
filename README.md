@@ -74,6 +74,10 @@
 
 - I would add metrics (well-specified tags and metric names) and logs (structured logging, with x-request-id and context tracking), using Datadog and Kibanna as the monitoring platforms in order to trace every error and insight.
 
+## Error Handling 
+
+- Error handling is important in go, a basic error handling infrastructure makes the Api be more users friendly. [Error Infraestructure](pkg/errors/errors.go)
+
 ## Test strategy
 
 - Before the deploy I would implement integration and functional tests, by mocking repositories and services, with more than 80% of coverage. 

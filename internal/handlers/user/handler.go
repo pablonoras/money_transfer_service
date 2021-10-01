@@ -3,12 +3,14 @@ package user
 import (
 	"encoding/json"
 	"fmt"
+	"net/http"
+
 	"github.com/go-chi/chi"
 	"github.com/pablonoras/money_transfer_service/internal/core/ports"
-	"net/http"
+	"github.com/pablonoras/money_transfer_service/pkg/errors"
 )
 
-type HTTPHandler struct{
+type HTTPHandler struct {
 	service ports.UserService
 }
 
@@ -21,12 +23,12 @@ func (hdl *HTTPHandler) Get(w http.ResponseWriter, r *http.Request) {
 
 	userID := chi.URLParam(r, "user_id")
 	if len(userID) == 0 {
-		http.Error(w, "Invalid user_id param,", 400)
+		http.Error(w, "Invalid user_id param,", http.StatusBadRequest)
 	}
 
 	user, err := hdl.service.GetBalance(ctx, userID)
 	if err != nil {
-		http.Error(w, fmt.Sprintf("Get user error: %v", err.Error()), 500)
+		http.Error(w, fmt.Sprintf("Get user error: %v", err.Error()), err.(*errors.Error).Status)
 	}
 
 	w.Header().Set("Content-Type", "application/json")
